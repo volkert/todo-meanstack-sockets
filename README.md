@@ -1,4 +1,5 @@
 todo-meanstack-sockets
 ======================
 
-A Todo list demo of the mean stack with sockets
+Simple Todo Example using the MEAN (http://mean.io/) stack. 
+Used FeathersJS (http://feathersjs.com) for API/Socket layer.
