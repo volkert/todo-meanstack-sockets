@@ -1,0 +1,12 @@
+<section data-ng-controller="IndexController">
+  <h1>My todos</h1>
+  <input type="text" ng-model="todoTitle" />
+  <button ng-click="addTodo()">Add</button>
+  <hr>
+  <ul data-ng-repeat="todo in Todo.all">
+    <li ng-class="{ 'done': todo.done }">
+      <span ng-click="Todo.markAsDone(todo)">{{ todo.title }}</span>
+      <button ng-click="Todo.remove(todo)">Remove</button>
+    </li>
+  </ul>
+</section>
